@@ -6,6 +6,9 @@ Payment; customers
 Customer Account; customers, admin (for deletion on user's request)
 Business Account; companies, admin(for deletion on company's request)
 
+
+These would be text inputs;
+
 title
 address
 Google Maps location pin selection/comfirmation
