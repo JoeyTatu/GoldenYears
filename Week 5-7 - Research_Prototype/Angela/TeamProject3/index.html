@@ -6,9 +6,19 @@
 	
 	<link rel="stylesheet" href="golden.css" type="text/css" />
 	<meta name="viewport" content="width-decive-width, initial-scale=1.0">
+	<script>
+	 var angle = 0;
+	function galleryspin(sign) { 
+	spinner = document.querySelector("#spinner");
+	if (!sign) { angle = angle + 45; } else { angle = angle - 45; }
+	spinner.setAttribute("style","-webkit-transform: rotateY("+ angle +"deg); -moz-transform: rotateY("+ angle +"deg); transform: rotateY("+ angle +"deg);");
+	}
+	</script>
+	
 </head>
 
 <body class="body">
+
 
 	<header class="mainheader">
 		
@@ -17,17 +27,22 @@
 		<a href="medical.html">MEDICAL SUPPORT</a>
 		<a href="events.html">EVENTS</a>
 		<a href="education.html">EDUCATION</a>
-		</nav>
-		
-		<!--missing login / guest-->
-		
+		</nav> </br>
+		</br>
 	</header>
+	<div class="button">
+		Please Log In
+		<button type="button">Log In</button>
+		 or Sign Up 
+		<button type="button">Sign Up </button>
+	</div>
+	
 
 	<div class="maincontent"> <!-- this div contains main post -->
 		<div class="content">
 			<article class="leftcontent">
 				<header>
-					<h2><a href="a" title="MEDICAL SUPPORT">MEDICAL SUPPORT</a></h2>
+					<h2><a href="medical.html" title="MEDICAL SUPPORT">MEDICAL SUPPORT</a></h2>
 				</header>
 				
 				</footer>
@@ -42,7 +57,7 @@
 			
 			<article class="midcontent">
 				<header>
-					<h2><a href="a" title="EVENTS">EVENTS</a></h2>
+					<h2><a href="events.html" title="EVENTS">EVENTS</a></h2>
 				</header>
 				
 				</footer>
@@ -57,7 +72,7 @@
 			
 			<article class="rightcontent">
 				<header>
-					<h2><a href="a" title="EDUCATION">EDUCATION</a></h2>
+					<h2><a href="education.html" title="EDUCATION">EDUCATION</a></h2>
 				</header>
 				
 				</footer>
@@ -74,22 +89,42 @@
 
 	<aside class="top-sidebar"> <!-- search bar -->
 		<article>
-		<h2>search bar</h2>
-		<p>this is the search bar</p>
+		<h2>SEARCH</h2>
+		<p>
+			<form>
+				<input type="text" name="search" placeholder="Search..">
+			</form>
+		</p>
 		</article>
 	</aside>
 	
 	<aside class="middle-sidebar">
 		<article>
-		<h2>Booking</h2>
+		<h2>BOOKING</h2>
 		<p>Events booking</p>
 		</article>
 	</aside>
 	
 	<aside class="bottom-sidebar"> <!-- should be changed for gallery possibly-->
 		<article>
-		<h2>Bottom sidebar</h2>
-		<p>this is the bottom side bar</p>
+		<h2>GALLERY</h2>
+		<p>
+		<base href="TeamProject3">
+			<div id="carousel">
+		<figure id="spinner">
+			<img src="1.jpg" alt>
+			<img src="2.jpg" alt>
+			<img src="3.jpg" alt>
+			<img src="4.jpg" alt>
+			<img src="5.jpg" alt>
+			<img src="6.jpg" alt>
+			<img src="7.jpg" alt>
+			<img src="8.jpg" alt>
+		</figure>
+</div>
+<span style="float:left" class="ss-icon" onclick="galleryspin('-')">&lt;</span>
+<span style="float:right" class="ss-icon" onclick="galleryspin('')">&gt;</span>
+		</p>
 		</article>
 	</aside>
 	

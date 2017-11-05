@@ -11,7 +11,7 @@ body{
 	background-position: 100%;
 }
 	 
-}
+
 /*this is to style the links */
 a {
 	text-decoration: none;
@@ -60,14 +60,12 @@ a:hover, a:active{
 	display: inline-block;
 	padding: 10px 20px;
 	height:20px;
-	
 }
 
 .mainheader nav a:hover, .mainheader nav a:active /*styling all the links and when you hover over them */
 .mainheader nav .active a:link .mainheader nav .active a:visited{
 	background-color: #F85A01;
 	text-shadow: none;
-	
 }
 /*adding the border to the nav bar */
 .mainheader nav a{
@@ -76,12 +74,24 @@ a:hover, a:active{
 	-webkit-border-radius: 5px;
 }
 
+.button {
+    background-image:url("bckgold.jpg");  /*gold back pic in folder */
+    border: none;
+    color: brown;
+    padding: 7px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 22px;
+	margin: auto ;
+	
+}
 .maincontent{
 	line-height: 25px;
 	border-radius: 5px; 
 	-moz-border-radius: 5px; 
 	-webkit-border-radius: 5px;
-	/*overflow: hidden;....if to contarers are over each other the browser fixs it in such away that it will push one underneath*/
+	/*overflow: hidden;....cont. over each other the browser fix it in such away that it will push one underneath*/
 	
 }
 .content{
@@ -93,7 +103,7 @@ a:hover, a:active{
 }
 
 .leftcontent{
-	background-color: #FFF;
+	background-color: #FAEBD7;
 	border-radius: 5px; 
 	-moz-border-radius: 5px; 
 	-webkit-border-radius: 5px;
@@ -104,7 +114,7 @@ a:hover, a:active{
 }
 
 .midcontent{
-	background-color: #FFF;
+	background-color: #FAEBD7;
 	border-radius: 5px; 
 	-moz-border-radius: 5px; 
 	-webkit-border-radius: 5px;
@@ -116,7 +126,7 @@ a:hover, a:active{
 }
 
 .rightcontent{
-	background-color: #FFF;
+	background-color: #FAEBD7;
 	border-radius: 5px; 
 	-moz-border-radius: 5px; 
 	-webkit-border-radius: 5px;
@@ -128,36 +138,100 @@ a:hover, a:active{
 }
 
 .top-sidebar{
-	width:21%;
+	width:auto;
 	float: right;
-	background-color: #FFF;
+	background-color:#FAEBD7;
 	border-radius: 5px; 
 	-moz-border-radius: 5px; 
 	-webkit-border-radius: 5px;
-	margin: 2% 0 2% 3%; /*can apply all margins here in one line, goes clockwise (top2% right0 bottom2% left3%) */
-	padding: 2% 3%;
+	margin: 1% 0 1% 2%; /*margins in one line,clockwise (top2% right0 bottom2% left3%) */
+	padding: 1%;
+	color: #F85A01;
+}
+
+input[type=text] {
+    width: 150px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('search1.png');
+    background-position: 5px 5px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 100%;
 }
 
 .middle-sidebar{
-	width:21%;
+	width:15%;
 	float: right;
-	background-color: #FFF;
+	background-color: #FAEBD7;
 	border-radius: 5px; 
 	-moz-border-radius: 5px; 
 	-webkit-border-radius: 5px;
 	margin: 2% 0 2% 3%;
 	padding: 2% 3%;
+	color: #F85A01;
 }
 
 .bottom-sidebar{
-	width:21%;
+	width:58%;
 	float: left;
-	background-color: #FFF;
+	background-color: #FAEBD7;
 	border-radius: 5px; 
 	-moz-border-radius: 5px; 
 	-webkit-border-radius: 5px;
-	margin: 2% 0 2% 3%;
+	margin: 2% 0 2% 0%;
 	padding: 2% 3%;
+color: #F85A01;}
+
+	div#carousel {   /*styling of gallery carousel */
+  perspective: 1200px; 
+  background: #F85A01; 
+  padding-top: 10%; 
+  font-size:0; 
+  margin-bottom: 3rem; 
+  overflow: hidden; 
+}
+figure#spinner { 
+  transform-style: preserve-3d; 
+  height: 300px; 
+  transform-origin: 50% 50% -500px; 
+  transition: 1s; 
+} 
+figure#spinner img { 
+  width: 40%; max-width: 425px; 
+  position: absolute; left: 30%;
+  transform-origin: 50% 50% -500px;
+  outline:1px solid transparent; 
+}
+figure#spinner img:nth-child(1) { transform:rotateY(0deg); 
+}
+figure#spinner img:nth-child(2) { transform: rotateY(-45deg); }
+figure#spinner img:nth-child(3) { transform: rotateY(-90deg); }
+figure#spinner img:nth-child(4) { transform: rotateY(-135deg); }
+figure#spinner img:nth-child(5){ transform: rotateY(-180deg); }
+figure#spinner img:nth-child(6){ transform: rotateY(-225deg); }
+figure#spinner img:nth-child(7){ transform: rotateY(-270deg); }
+figure#spinner img:nth-child(8){ transform: rotateY(-315deg); }
+div#carousel ~ span { 
+  color: #fff; 
+  margin: 5%; 
+  display: inline-block; 
+  text-decoration: none; 
+  font-size: 2rem; 
+  transition: 0.6s color; 
+  position: relative; 
+  margin-top: -6rem; 
+  border-bottom: none; 
+  line-height: 0; }
+div#carousel ~ span:hover { color: #888; cursor: pointer; }
 }
 
 .mainFooter{
@@ -237,26 +311,6 @@ color: #F85A01;
 }
 
 }
-  .form_settings
-{ margin: 15px 0 0 0;}
-
-.form_settings p
-{ padding: 0 0 4px 0;}
-
-.form_settings span
-{ float: left; 
-  width: 200px; 
-  text-align: left;}
-  
-.form_settings input, .form_settings textarea
-{ padding: 5px; 
-  width: 299px; 
-  font: 100% arial; 
-  border: 1px solid #E5E5DB; 
-  background: #FFF; 
-  color: #47433F;}
-  
-
   
   .separator
 { width: 100%;
