@@ -1,0 +1,44 @@
+/* *************** Slide Show Layout *************** */
+
+#cedriccontainter {
+	width:100%;
+}
+
+
+#img { 
+    width:992px;
+	height: 473px;
+	margin:auto;
+	position:relative;
+}
+#left-holder{ 
+	width:100px;
+	height:200px;
+	position:absolute;
+	bottom:0px;
+}
+#right-holder{
+	width:100px;
+	height:200px;
+	position:absolute;
+	bottom:0px;
+	right:200px;
+}
+.left { 
+	height:80px;
+	width:80px;
+}
+.right {
+	height:80px;
+	width:80px;
+}
+
+#compacts table, tr, td{
+	height:450px;
+	width:33%;
+}
+
+.compacts img a{
+	height:200px;
+	margin-bottom:7%;
+}

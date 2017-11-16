@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	
+	<title>Nolan's Cars - NolanCars.ie
+	</title>
+	
+	<!--[if lt IE 9]>
+	<script src="http://css3-mediaqueriesjs.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style2.css">
+	<link rel="stylesheet" type="text/css" href="css/style3.css">
+	<script src="javascript/javascript.js"></script>
+
+</head>
+
+<body>
+<div class="wrapper">
+<!-- Header image -->
+<header>
+	<img style="width:100%; padding: 0px;" src="images/indexheader.jpg" alt="NolanCars.ie" />
+</header>
+	
+<!-- Sidebar and main image link -->		
+			<div class="section1">
+<!-- Sidebar menu -->
+				<div id="first"> 
+					<ul>
+						<li id="heading">Navigation
+						</li>
+						
+						<li>
+							<a href="index.html">Home
+							</a>
+						</li>
+
+						<li>
+							<a href="about.html">About us
+							</a>
+						</li>
+
+						<li>
+							<a href="showroom.html">Showroom
+							</a>
+						</li>
+						
+						<li>
+							<a href="testdrive.html">Test Drive &amp; Finance
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			
+<!-- Showroom layout,script call and  navigation menu-->
+			<div class="section1 last">
+				<div id="second">
+						<div id="cedriccontainer">
+						<div id="navigation"> 
+							<ul>
+								<li><button type="button" onclick="toTable1()">COMPACT</button></li>
+								<li><button type="button" onclick="toTable2()">SUVs</button></li>
+								<li><button type="button" onclick="toTable3()">SPORT</button></li>
+							</ul>
+						</div>				
+						<div class="slide1">
+							<img src="images/slide1/img1.jpg" name="first" id="img"/>
+								<div id="left-holder">
+									<img onclick = "slide(-1)" class="left" src="images/left.png"/>
+								</div>
+								<div id="right-holder">
+									<img onclick = "slide(1)" class="right" src="images/right.png"/>
+								</div>
+						</div>
+						</div>
+						
+						<div id="compacts" name="table1">
+							<table style="width:99.5%"><caption style=" border: solid orange">COMPACT</caption>
+								<tr>								
+									<td>
+							<!--	<a href="#"> DID YOU WANT THIS AS  LINK? -->
+										<img src="images/class-a/img1.jpg"/></br>
+										<p>
+										Doors: 5</br>
+										Engine: 2.1</br>
+										Fuel: Diesel</br>
+										Economy: 67mpg</br>
+										Gears: Automatic</br>
+										0-62mph: 7.5s
+										</p>
+									</td>
+									<td><img src="images/class-b/img1.jpg"/>
+										<p>
+										Doors: 5</br>
+										Engine: Electric</br>
+										Fuel: n/a</br>
+										Economy: 67mpg</br>
+										Gears: Automatic</br>
+										0-62mph: 6.5s
+										</p>
+									</td>
+									<td><img src="images/class-c/img1.jpg"/>
+										<p>
+										Doors: 4</br>
+										Engine: V8 </br>
+										Fuel: 4.0</br>
+										Economy: 25mpg</br>
+										Gears: 4matic</br>
+										0-100mph: 6.5s
+										</p>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<div class="SUV">
+							<table style="width:99.5%"><caption style=" border: solid orange">SUVs</caption>
+								<tr>								
+									<td><img src="images/gla/img1.jpg"/></br>
+										<p>
+										Doors: 4</br>
+										Engine: V6</br>
+										Fuel: Gas</br>
+										Economy: 25/35 mpg</br>
+										Gears: 7-Manual</br>
+										0-62mph: 7.5s
+										</p>
+									</td>
+									<td><img src="images/gle/img1.jpg"/>
+										<p>
+										Doors: 4</br>
+										Engine: V6</br>
+										Fuel: Gas</br>
+										Economy: 18/24mpg</br>
+										Gears: 7-Manual </br>
+										0-62mph: 7.5s
+										</p>
+									</td>
+									<td><img src="images/glc/img1.jpg"/>
+										<p>
+										Doors: 4</br>
+										Engine: V4 </br>
+										Fuel: Gas</br>
+										Economy: 25mpg</br>
+										Gears: 9-Manual</br>
+										0-62mph: 8.5s
+										</p>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<div class="Sport">
+							<table style="width:99.5%"><caption style=" border: solid orange">SPORT</caption>
+								<tr>								
+									<td><img src="images/amg-gt/img1.jpg"/></br>
+										<p>
+										Doors: 2</br>
+										Engine: V8</br>
+										Fuel: 4.0</br>
+										Economy: 16/22 mpg</br>
+										Gears: 7-Manual</br>
+										0-98 mph: 3.5s
+										</p>
+									</td>
+									<td><img src="images/sl/img1.jpg"/>
+										<p>
+										Doors: 4</br>
+										Engine: V8</br>
+										Fuel: 5.5</br>
+										Economy: 24mpg</br>
+										Gears: 7-Automatic </br>
+										0-62mph: 5.5s
+										</p>
+									</td>
+								</tr>
+							</table>
+						</div>
+				</div>
+			</div>
+
+<footer>
+		<div class="col">
+				<p id="foothead1">Nolan's Cars</p>
+				<p><b>01 2345678</b></p>
+				<p>123 Main Street<br />
+				Killiney, Co Dublin<br />
+				<a href="mailto:info@nolancars.ie" target="_blank">info@nolancars.ie</a></p>
+				<p id="foothead3">Opening hours:</p>
+				<p>
+				09:00 to 18:00
+				<br />
+				Monday to Sunday</p>
+		</div>
+		
+		
+		<div class="col">
+				<p id="foothead2">Add us on Social Networking<br />sites for exclusive offers!</p>
+			<ul>
+				<li>
+					<a href="http://facebook.com" target="_blank" >
+						<img src="images/facebook1.png" alt="facebook logo"/>
+					</a>
+				</li>
+				
+				<li>
+					<a href="http://plus.google.com" target="_blank" >
+						<img src="images/googleplus.png" alt="google plus logo"/>
+					</a>
+				</li>
+				
+				<li>
+					<a href="http://twitter.com" target="_blank">
+						<img src="images/twitter1.png" alt="twitter logo"/>
+					</a>
+				</li>
+				
+				<li>
+					<a href="http://youtube.com" target="_blank">
+						<img src="images/youtube1.png" alt="YouTube logo"/>
+					</a>
+				</li>
+		
+			</ul>
+		</div>
+		
+		<div class="col last" id="logo">
+			<a href="http://www.mercedes-benz.ie/">
+				<img src="https://upload.wikimedia.org/wikipedia/de/4/45/Mercedes-Benz-Logo.svg" alt="Mercedes-Benz logo"/>
+			</a>
+		</div>
+		
+		</footer>
+		
+<div class="copyright last">
+		<p>Copyright &copy; 2015 Nolan's Cars </p>
+</div>
+</div>
+</body>
+</html>

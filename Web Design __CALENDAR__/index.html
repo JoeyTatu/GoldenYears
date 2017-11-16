@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<title>Nolan's Cars - NolanCars.ie
+	</title>
+	
+	<!--[if lt IE 9]>
+	<script src="http://css3-mediaqueriesjs.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+	
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+	<script src="javascript/javascript.js">
+	</script>
+	
+<script>
+/* For YouTube video to autoplay and mute it */ 
+var tag = document.createElement('script');
+      tag.src = "http://www.youtube.com/player_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      var player;
+      function onYouTubePlayerAPIReady() {
+        player = new YT.Player('player', {
+          playerVars: { 'autoplay': 1, 'controls': 1,'autohide':1,'wmode':'opaque' },
+          videoId: 'vDMZyCqTxQA',
+          events: {
+            'onReady': onPlayerReady}
+        });
+      }
+
+      function onPlayerReady(event) {
+        event.target.mute();
+      }
+</script>
+</head>
+<body>
+<div class="wrapper">
+<!-- Header image -->
+<header>
+	<img src="images/indexheader.jpg" alt="NolanCars.ie" />
+</header>
+	
+<!-- Sidebar and main image link -->		
+			<div class="section1">
+<!-- Sidebar menu -->
+				<div id="first"> 
+					<ul>
+						<li id="heading">Navigation
+						</li>
+						
+						<li>
+							<a href="index.html">Home
+							</a>
+						</li>
+
+						<li>
+							<a href="about.html">About us
+							</a>
+						</li>
+
+						<li>
+							<a href="showroom.html">Showroom
+							</a>
+						</li>
+						
+						<li>
+							<a href="testdrive.html">Test Drive &amp; Finance
+							</a>
+						</li>
+						
+					</ul>
+				</div>
+			</div>
+
+			
+<!-- Main image link -->
+			<div class="section1 last">
+				<div id="second">
+							<div id="video">
+								<div id="videoheading"><p>The new generation SL - Trailer</p>
+								</div>
+								
+								<div id="player">
+									<iframe width="560" height="315" src="https://www.youtube.com/embed/vDMZyCqTxQA?wmode=opaque&autohide=1&autoplay=1&enablejsapi=1" frameborder="0" allowfullscreen="allowfullscreen">
+									</iframe>
+								
+		<!--- The video tag would not work in the gear.host site for some reason, used iframe instead. Can go to nolancarsie.gear.host/test.html to see version using video tag, but video will not play
+								
+								<video width="640" height="360" controls autoplay muted>
+								<source src="Uncrashable.ogv" type='video/ogg; codecs="theora, vorbis"'/>
+								<source src="Uncrashable.webm" type='video/webm' >
+								<source src="Uncrashable.mp4" type='video/mp4'>
+								<p>Video is not visible, most likely your browser does not support HTML5 video</p>
+								</video>
+		-->
+								
+								</div>
+							</div>
+				</div>
+			</div>
+			
+<!-- Third row showing what's in the Showroom and the Garage -->
+<!-- Showroom info -->
+		<div class="section2">
+			<div id="showroom">
+				<p id="srheading">
+					Showroom
+				</p>
+				<a href="showroom.html">
+						<img src="images/showroom.jpg" alt="Nolan's Cars Showroom" />
+					</a>
+				<p>
+					Our Showroom shows our lastest Mercedes-Benz cars along with fantastic offers and discounts. <a href="showroom.html">Click here</a> to go to our Showroom.
+				</p>
+			</div>
+		</div>
+
+<!-- Garage Services info -->
+		<div class="section2 last">
+			<div id="garage">
+				<p id="gsheading">
+					Garage Services
+				</p>
+						<img src="images/garage.jpg" alt="Nolan's Cars Garage Services" />
+				<p>
+					Our Garage Services will keep your Mercedes-Benz up and running. Our bi-annual servicing costs only &euro;55! That's an incredibe deal! Our trained mechanics specialise in Mercedes-Benz and know every in and out of your car. Please drop in or contact us for more information.
+				</p>
+			</div>
+		</div>
+
+
+<footer>
+		<div class="col">
+				<p id="foothead1">Nolan's Cars</p>
+				<p><b>01 2345678</b></p>
+				<p>123 Main Street<br />
+				Killiney, Co Dublin<br />
+				<a href="mailto:info@nolancars.ie" target="_blank">info@nolancars.ie</a></p>
+				<p id="foothead3">Opening hours:</p>
+				<p>
+				09:00 to 18:00
+				<br />
+				Monday to Sunday</p>
+		</div>
+		
+		<div class="col">
+				<p id="foothead2">Add us on Social Networking<br />sites for exclusive offers!</p>
+			<ul>
+				<li>
+					<a href="https://www.facebook.com/NolanCarsie-548197405328713" target="_blank" >
+						<img src="images/facebook1.png" alt="facebook logo"/>
+					</a>
+				</li>
+				
+				<li>
+					<a href="https://plus.google.com/+MercedesBenz" target="_blank" >
+						<img src="images/googleplus.png" alt="google plus logo"/>
+					</a>
+				</li>
+				
+				<li>
+					<a href="http://twitter.com/NolanCars_ie" target="_blank">
+						<img src="images/twitter1.png" alt="twitter logo"/>
+					</a>
+				</li>
+				
+				<li>
+					<a href="https://www.youtube.com/channel/UCIsmFZk123HzWEF1VQpqP3w" target="_blank">
+						<img src="images/youtube1.png" alt="YouTube logo"/>
+					</a>
+				</li>
+		
+			</ul>
+		</div>
+		
+		<div class="col last" id="logo">
+			<a href="http://www.mercedes-benz.ie/">
+				<img src="https://upload.wikimedia.org/wikipedia/de/4/45/Mercedes-Benz-Logo.svg" alt="Mercedes-Benz logo"/>
+			</a>
+		</div>
+		
+		</footer>
+		
+<div class="copyright last">
+		<p>Copyright &copy; 2015 Nolan's Cars </p> 
+</div>
+</div>
+</body>
+</html>
